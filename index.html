@@ -1,0 +1,317 @@
+
+
+ <!DOCTYPE html>
+
+<html><head>
+<title>Shuoyao Wang's Homepage</title>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+
+<style type="text/css">
+ @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+
+	body
+	{
+	font-family:"Roboto",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:300;
+    	background-color : #CDCDCD;
+	}
+    	.content
+	{
+    		width : 1200px;
+    		padding : 25px 30px;
+    		margin : 25px auto;
+    		background-color : #fff;
+    		box-shadow: 0px 0px 10px #999;
+    		border-radius: 15px; 
+	}	
+	table
+	{
+		padding: 5px;
+	}
+	
+	table.pub_table,td.pub_td1,td.pub_td2
+	{
+		padding: 8px;
+		width: 1150px;
+        border-collapse: separate;
+        border-spacing: 15px;
+        margin-top: -5px;
+	}
+
+	td.pub_td1
+	{
+		width:50px;
+	}
+    td.pub_td1 img
+    {
+        height:120px;
+        width: 160px;
+    }
+	
+	div#container
+	{
+		margin-left: auto;
+		margin-right: auto;
+		width: 1120px;
+		text-align: left;
+		position: relative;
+		background-color: #FFF;
+	}
+	div#DocInfo
+	{
+		color: #1367a7;
+		height: 158px;
+	}
+	h4,h3,h2,h1
+	{
+		color: #3B3B3B;
+	}
+	h2
+	{
+		font-size:130%;
+	}
+	p
+	{
+		color: #5B5B5B;
+		margin-bottom: 50px;
+	}
+	p.caption
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 600px;
+	}
+	p.caption2
+	{
+		color: #9B9B9B;
+		text-align: left;
+		width: 800px;
+	}
+	#header_img
+	{
+		position: absolute;
+		top: 0px; right: 0px;
+    }
+	a:link,a:visited
+	{
+		color: #1367a7;
+		text-decoration: none;
+	}
+
+    #mit_logo {
+        position: absolute;
+        left: 646px;
+        top: 14px;
+        width: 200px;
+        height: 20px;
+    }
+   
+    table.pub_table tr {
+        outline: thin dotted #666666;
+    }
+    .papericon {
+        border-radius: 8px; 
+        -moz-box-shadow: 3px 3px 6px #888;
+        -webkit-box-shadow: 3px 3px 6px #888;
+        box-shadow: 3px 3px 6px #888;
+	height:120px;
+        width: 160px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+    }
+
+     .papericon_blank {
+
+        width: 160px;
+	margin-top:5px;
+	margin-left:5px;
+	margin-bottom:5px;
+    }
+
+    .media {
+	outline: thin dotted #666666;
+ 	margin-bottom: 15px;	
+	margin-left:10px;
+    }
+    .media-body {
+	margin-top:5px;
+	padding-left:20px;
+    }
+
+.papers-selected h5, .papers-selected h4 { display : none; }
+.papers-selected .publication { display : none; }
+.paperhi-only { display : none; }
+.papers-selected .paperhi { display : flex; }
+.papers-selected .paperlo { display : none; }
+
+.hidden>div {
+	display:none;
+}
+
+.visible>div {
+	display:block;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23931362-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23931362-2');
+</script>
+
+<script type="text/javascript">
+    var myPix = new Array("./gongzuozheng_small.jpg")
+    function choosePic() {
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        document.getElementById("myPicture").src = myPix[randomNum];
+    };
+</script>
+
+<script>
+$(document).ready(function() {
+  $('.paperlo button').click(function() {
+     $('.papers-container').addClass('papers-selected');
+  });
+  $('.paperhi button').click(function() {
+     $('.papers-container').removeClass('papers-selected');
+  });
+
+
+	$('.text_container').addClass("hidden");
+
+	$('.text_container').click(function() {
+		var $this = $(this);
+
+		if ($this.hasClass("hidden")) {
+			$(this).removeClass("hidden").addClass("visible");
+			$(this).removeClass("papericon");
+		} else {
+			$(this).removeClass("visible").addClass("hidden");
+		}
+	});
+
+
+});
+</script>
+
+</head>
+
+
+<body>
+<div class="content">
+	<div id="container">
+
+	<table>
+	<tbody><tr>
+	<td><img id="myPicture" src="./zhengjianzhao.jpg" style="float:left; padding-right:20px" height="200px"></td>
+	<script>choosePic();</script>
+	<td>
+	<div id="DocInfo">
+		<h1>Muxin Liao (廖牧鑫)</h1>
+        Lecturer (Young Professor)<br>
+	school of Computer Science and Engineering, Jiangxi Agricultural University<br>
+        Email: liaomx[AT]jxau[Dot]edu[Dot]com<br>
+        <a href="./resume_CN.pdf">[CV]</a> &bull; <a href="https://scholar.google.com/citations?user=RVt9XHEAAAAJ&hl=zh-CN" rel="nofollow">[Google Scholar]</a> &bull;  <a href="https://scholar.google.com/citations?user=RVt9XHEAAAAJ&hl=zh-CN" rel="nofollow">[Publications]</a> &bull;<a href="https://github.com/seabearlmx">[Github]</a></p><br>
+	</div><br>
+	</td>
+	</tr>
+	</tbody></table>
+	<br>
+<!-- <li>拟开展的研究方向：
+<ul>
+      <li>领域自适应：Domain Adaptation</li>
+      <li>领域泛化：Domain Generalization</li>
+      <li>语义分割：Semantic Segmentation</li>
+      <li>环境感知：Environmental Perception</li>
+      <li>植物叶片病害识别：Plant Leaf Disease Recognition</li>
+<li>课题组主要围绕使用深度学习、机器学习提高图像在分类、检测、分割、生成等各任务上的性能，同时欢迎Self-Motivated同学自拟相关Topic开展研究</li>
+	<li>If you are a student at JXAU, you have already beaten 80% of the students when you are reading this paragraph. If you'd like to join our group, please send an email to my email, liaomx[AT]jxau[Dot]edu[Dot].cn or seabearlmx[AT]gmail[Dot].com. I will respond to each email one by one.</li>
+    </ul>
+</li> -->
+<!--   </ul> -->
+	<h2>About Me</h2>
+    <ul>
+	    Dr. Liao joined the School of Computer Science and Engineering of Jiangxi Agricultural University as a young professor in November 2024. 
+      Previously, he obtained a Ph.D. from the College of Electronic and Information Engineering, Shenzhen University, China, in June 2024, 
+      and the advisors are Professor Xia Li and Associate Professor Wenbin Zou. 
+      He has been engaged in research related to semantic segmentation in open road scenarios since 2020. 
+      In recent years, he has participated in several projects, such as the National Natural Science Foundation Project, 
+      the Guangdong Natural Science Foundation Project, and the Shenzhen Stable Support Project. 
+      In terms of unsupervised domain adaptive semantic segmentation, domain generalization semantic segmentation, 
+      and supervised learning semantic segmentation in structured and unstructured road scenarios, 
+      a series of works have been carried out. Now, he has published more than 20 papers, including IEEE Transactions (TIP, TMM, TCSVT, TITS, etc.) and 7 CCF-A conferences (ACM MM).   
+      He currently serves on the 31st Association for Computing Machinery's Special Interest Group on Knowledge Discovery and Data Mining (SIGKDD Area Chair 2025, CCF-A Conference). 
+      In addition, he is a reviewer of several top journals (e.g. IEEE TIP, IEEE TMM, IEEE TNNLS, IEEE TCSVT, etc.), and conferences (ICLR 2025).
+    </ul>
+	
+	
+	<h2>Research Interests</h2>
+    <ul>
+        <li>Domain Adaptation</li>
+	      <li>Domain Generalization</li>
+	      <li>Semantic Segmentation</li>
+        <li>Smart Agriculture</li>
+    </ul>
+	
+    <h2>News</h2>
+    <ul>
+	    <li>Jan 2025: I'm selected as the AC of 31st SIGKDD  </li>
+</ul>
+
+
+
+
+	
+<h2>Publications</h2>
+	(# indicates the student I advised or co-advised; * indicates the corresponding author.)
+<h3 id="journal"> <font size=3>Bubble</font></h3>
+<ul>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Binbin Wei, Yuhang Zhang, Wenbin Zou, Xia Li, "Class-Balanced Sampling and Discriminative Stylization for Domain Generalization Semantic Segmentation", IEEE Transactions on Intelligent Transportation Systems, 2024. (SCI, 中科院一区, IF: 7.9). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Yuhang Zhang, Guoguang Hua, Wenbin Zou, Xia Li, "Calibration-based Multi-Prototype Contrastive Learning for Domain Generalization Semantic Segmentation in Traffic Scenes", IEEE Transactions on Intelligent Transportation Systems, 2024. (SCI, 中科院一区, IF: 7.9). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Yuhang Zhang, Guoguang Hua, Wenbin Zou, Xia Li, "Preserving Label-related Domain-specific Information for Cross-domain Semantic Segmentation", accepted by IEEE Transactions on Intelligent Transportation Systems, 2024. (SCI, 中科院一区, IF: 7.9). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Yuhang Zhang, Guoguang Hua, Wenbin Zou, Xia Li, "Calibration-based Dual Prototypical Contrastive Learning Approach for Domain Generalization Semantic Segmentation", ACM International Conference on Multimedia, 2023. (CCF-A). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Yuhang Zhang, Guoguang Hua, Wenbin Zou, Xia Li, "Considering representation diversity and prediction consistency for domain generalization semantic segmentation", Knowledge-Based Systems, 2024. (SCI, 中科院一区, IF: 7.2). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Yuhang Zhang, Guoguang Hua, Wenbin Zou, Xia Li, "PDA: Progressive Domain Adaptation for Semantic Segmentation", Knowledge-Based Systems, 2023. (SCI, 中科院一区, IF: 7.2). </li>
+	<li></font> Zijun Li, <b><strong>Muxin Liao*</strong></b>, "Learning generalized visual relations for domain generalization semantic segmentation", Expert Systems With Applications, 2024. (SCI, 中科院一区, IF: 7.5). </li>
+	<li></font> Guoguang Hua#, <b><strong>Muxin Liao#</strong></b>, Shishun Tian, Yuhang Zhang, Wenbin Zou, "Multiple relational learning network for joint referring expression comprehension and segmentation", IEEE Transactions on Multimedia, 2023. (SCI, 中科院一区, IF: 8.4). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Yuhang Zhang, Guoguang Hua, Wenbin Zou, Xia Li, "Domain-invariant information aggregation for domain generalization semantic segmentation", Neurocomputing, 2023. (SCI, 中科院二区, IF: 5.5). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Guoguang Hua#, Shishun Tian, Yuhang Zhang, Wenbin Zou, Xia Li, "Exploring more concentrated and consistent activation regions for cross-domain semantic segmentation", Neurocomputing, 2024. (SCI, 中科院二区, IF: 5.5). </li>
+	<li></font> <b><strong>Muxin Liao#</strong></b>, Shishun Tian#, Yuhang Zhang, Guoguang Hua, Wenbin Zou, Xia Li, "Class-discriminative domain generalization for semantic segmentation", Image and Vision Computing, 2024. (SCI, 中科院三区, IF: 4.2). </li>
+	<li></font> Wei Li#, <b><strong>Muxin Liao#</strong></b>, Wenbin Zou, "A terrain segmentation network for navigable areas with global strip reliability evaluation and dynamic fusion", Expert Systems With Applications, 2025. (SCI, 中科院一区, IF: 7.5). </li>
+	<li></font> Wei Li#, <b><strong>Muxin Liao#</strong></b>, Wenbin Zou, "A progressive segmentation network for navigable areas with semantic–spatial information flow", Expert Systems With Applications, 2025. (SCI, 中科院一区, IF: 7.5). </li>
+	
+</ul>
+
+<h2>Services</h2>
+Area Chairs:
+<ul>
+	<li>31st SIGKDD (CCF-A)</li>
+</ul>
+
+Reviewers:
+<ul>
+	<li>IEEE TIP</li>
+  <li>IEEE TMM</li>
+  <li>IEEE TNNLS</li>
+  <li>IEEE TCSVT</li>
+  <li>IEEE SPL</li>
+  <li>CAAI Transactions on Intelligence Technology</li>
+  <li>Knowledge-based System</li>
+  <li>Computer Vision and Image Understanding</li>
+  <li>Neurocomputing</li>
+  <li>Displays</li>
+  <li>Applied Intelligence</li>
+  <li>Image and Vision Computing</li>
+  <li>IET Computer Vision</li>
+</ul>
+
+</div>
+</div>
+</body></html>
